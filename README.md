@@ -7,6 +7,7 @@ Best react form library of 2020. V 1.0
 How I believe forms should work AS A UX perspective. 
 
 Premise 1. A form can be invalid, but we don't interrupt the user and show an error to the user until he completed his entry. 
+
 Premise 2. disable Form until the form Feilds are valid, making it clear that there a mistake in the Form. 
 
 To accomplish this, we take the following steps:
