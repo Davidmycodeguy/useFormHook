@@ -1,35 +1,27 @@
 
-# useFormHook
+# react-useformhook-pro
 Best react form library of 2020. V 1.0 
 
 How I belive forms should work AS A UX pespective . 
 
+Premise 1. A form can be invalid but we show inturpt show error the user untill he completed his entry. 
+Premise 2. disable Form untill the form Feilds are valid maing it clear that there a mistake in the form. 
+
+To accpolish this we take the following steps:
 1. Form field validity should be tested on every change and blur.
-2. Form validity Errors message should not appear as the user is typeing. 
-3. Form validity Errors message should appear after user stops typeing for 3 seconds or on blur (clicks outinput).
-4. Form Buttom should be disabled unless all fields are valid.
+2. Form field Errors message should NOT appear as the user is typeing.  
+3. Form field Errors message should appear after user stops typeing for 3 seconds or on blur (clicks outinput).
+4. Form buttuon have logic  to check all fields are valid before enbaleing the button.
 
-How i beilve forms should work as a devloper perpective.
-
-# useFormHook
-Best react form library of 2020. V 1.0 
-
-How I believe forms should work as a user experience perspective. 
-
-1. Form field validity should be tested on every change and blur.
-2. Form validity Errors message should not appear as the user is typing. 
-3. The form validity Error message should appear after the user stops typing for 3 seconds or on blur (clicks output).
-4. Form Button should be disabled unless all fields are valid.
 
 # How I believe forms should work from a developer perspective. 
-
 
 # The code is super lightweight. 
 
 - .4kB MINIFIED 
 - 708B MINIFIED + GZIPPED
 
-# The validations are easy just past a regex pattern
+# The validations are easy just one line a regex pattern (add pattren attribute to input)
 <input
 name="email"
 onBlur={handleInputChange}
@@ -38,7 +30,7 @@ pattern="\S+@\S+\.\S+"
 value={values.email}
 />
 
-# Can easily  block a user from typing characters regex patterns.
+# Prevent user entering certain  characters with just one line regex pattern. (add allow data-dontallow)
 <input
 data-dontallow="[0-9]"
 name="numbersOnly"
@@ -47,7 +39,7 @@ onChange={handleInputChange}
 value={values.numbersOnly}
 />
 
-# Fast devlopment only one line is needed to add form feild validations and prevent regex patterns
+# Fast devlopment and easy to read only one line regex patterns where as ussly might take serval hundrand lines. 
 Form Valuations and key prevention is less than one l line per input. 
 
 Code Sandbox 
