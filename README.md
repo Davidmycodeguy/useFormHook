@@ -12,7 +12,7 @@ Premise 2. disable Form until the form Feilds are valid, making it clear that th
 To accomplish this, we take the following steps:
 1. Form field validity should be tested on every change and blur.
 2. Form field Errors message should NOT appear as the user is typing.  
-3. The form field Error message should be displayed after the user stops typing for 3 seconds or on blur (clicks out of the input).
+3. The form field Error message should be displayed after the user stops typing for 3 seconds (debounce) or  clicks out of the input (on blur).
 4. Form buttons have logic to check all fields are valid before enabling the button.
 
 
