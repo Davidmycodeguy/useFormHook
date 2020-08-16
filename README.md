@@ -4,6 +4,7 @@
 # react-useformhook-pro
 
 Video guide. https://www.youtube.com/watch?v=CcPajbjT6Zw&feature=youtu.be
+Did it one quick take. Good Enough start. 
 
 Best react form library of 2020. V 1.0 
 
