@@ -16,12 +16,12 @@ To accpolish this we take the following steps:
 
 # How I believe forms should work from a developer perspective. 
 
-# The code is super lightweight. 
+ The code is super lightweight. 
 
 - .4kB MINIFIED 
 - 708B MINIFIED + GZIPPED
 
-# The validations are easy just one line a regex pattern (add pattren attribute to input)
+The validations are easy just one line a regex pattern (add pattren attribute to input)
 	<input
 	name="email"
 	onBlur={handleInputChange}
@@ -30,7 +30,7 @@ To accpolish this we take the following steps:
 	value={values.email}
 	/>
 
-# Prevent user entering certain  characters with just one line regex pattern. (add allow data-dontallow)
+Prevent user entering certain  characters with just one line regex pattern. (add allow data-dontallow)
 	<input
 	data-dontallow="[0-9]"
 	name="numbersOnly"
@@ -39,10 +39,10 @@ To accpolish this we take the following steps:
 	value={values.numbersOnly}
 	/>
 
-# Fast devlopment and easy to read only one line regex patterns where as ussly might take serval hundrand lines. 
+ Fast devlopment and easy to read only one line regex patterns where as ussly might take serval hundrand lines. 
 Form Valuations and key prevention is less than one l line per input. 
 
-# Code Sandbox 
+Code Sandbox 
 https://codesandbox.io/s/laughing-brook-eszw7?file=/src/App.js:647-1123
 
 # Quick guide. 
