@@ -94,4 +94,9 @@ Optional, don't allow specific values with regex patterns.
          value={values.email}
  data-dontallow="[0-9]"
             />
+	    
+	    
+Lastly only enable the form  when its valid. 
+
+             <button disabled={!isFormValid}> Submit Form </button>
 
