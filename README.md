@@ -6,7 +6,8 @@ Best react form library of 2020. V 1.0
 
 How I believe forms should work AS A UX perspective.  
 
-Premise 1. Make the user feel at ease 
+Premise 1. Make the user feel at ease.
+
 Please Don't Interrupt the user with show error to the user until he completed his entry. It Slows down the user and might make them feel attacked.  
 
 The form field Error message should be displayed after clicks out of the input (on blur).
