@@ -7,14 +7,15 @@ Best react form library of 2020. V 1.0
 How I believe forms should work AS A UX perspective.  
 
 Premise 1. Make the user feel at ease 
-Dont Interrupt the  user with  show  error to the user until he completed his entry. it Slows down user makes him feel attcked.  
-The form field Error message should be displayed after clicks out of the input (on blur).
-AOne annonce is that with this user might think  everything is right but clicks out then he says error. This slow feed back might upset the user so we have to add one more thing called debounce.  When the user stops typing for 3 seconds (debounce)  then we can . 
- 
-Also Techniclay keep in mind that  
-A form can be invalid and not show errors. For exsaample intal start postion doesnt have anything filled out. Its not valid but we dont want show errors on default state. Form field validity should be tested on every change and blur.
+Please Don't Interrupt the user with show error to the user until he completed his entry. It Slows down the user and might make them feel attacked.  
 
-Premise 2. Make it imposible to get wrong.
+The form field Error message should be displayed after clicks out of the input (on blur).
+Another annoyance is that with this user might think everything is right but clicks out; then he says error. This slow feedback might upset the user, so we have to add one more thing called debounce.  When the user stops typing for 3 seconds (debounce), then we can. 
+ 
+Also, Technically keep in mind that.  
+A form can be invalid and not show errors. For example, the initial start position doesn't have anything filled out. It's not valid, but we don't want to show the mistakes on the default state. Form field validity should be tested on every change and blur.
+
+Premise 2. Make it impossible to get wrong.
 Disable Form until the form Feilds are valid, making it clear that there a mistake in the Form. 
 
 
@@ -55,7 +56,7 @@ Code Sandbox
 https://codesandbox.io/s/laughing-brook-eszw7?file=/src/App.js:647-1123
 
 # Quick guide. 
-Insall the package.
+Install the package.
 
     npm i -s react-useformhook-pro 
     
@@ -113,7 +114,7 @@ Lastly, only enable the Form when it's valid.
 
 
 
-How i beilve forms should work as a devloper perpective.
+How i believe forms should work as a developer perspective.
 
 # useFormHook
 Best react form library of 2020. V 1.0 
@@ -142,7 +143,7 @@ How I believe forms should work as a user experience perspective.
          value={values.email}
       />
 
-# Can easily  block a user from typing characters regex patterns.
+# Can easily block a user from typing characters regex patterns.
     <input
                 data-dontallow="[0-9]"
                 name="numbersOnly"
@@ -151,7 +152,7 @@ How I believe forms should work as a user experience perspective.
                 value={values.numbersOnly}
             />
 
-# Fast devlopment only one line is needed to add form feild validations and prevent regex patterns
+# Fast development only one line is needed to add form field validations and prevent regex patterns
 Form Valuations and key prevention is less than one l line per input. 
 
 Code Sandbox 
@@ -202,7 +203,7 @@ Optional, don't allow specific values with regex patterns.
             />
 	    
 	    
-Lastly only enable the form  when its valid. 
+Lastly, only enable the Form when it's valid. 
 
     <button disabled={!isFormValid}> Submit Form </button>
 
