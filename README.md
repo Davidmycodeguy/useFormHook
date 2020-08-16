@@ -52,10 +52,15 @@ Code Sandbox
 https://codesandbox.io/s/laughing-brook-eszw7?file=/src/App.js:647-1123
 
 # Quick guide. 
+Insall the package.
 
-	import useForm from 'react-useformhook-pro';
+    npm i -s react-useformhook-pro 
+    
+
 
 call in hook in the component
+
+	import useForm from 'react-useformhook-pro';
 
 	const { errors,
 	setErrors,
