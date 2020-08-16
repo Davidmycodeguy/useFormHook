@@ -10,9 +10,9 @@ Premise 1. Make the user feel at ease
 Please Don't Interrupt the user with show error to the user until he completed his entry. It Slows down the user and might make them feel attacked.  
 
 The form field Error message should be displayed after clicks out of the input (on blur).
-Another annoyance is that with this user might think everything is right but clicks out; then he says error. This slow feedback might upset the user, so we have to add one more thing called debounce.  When the user stops typing for 3 seconds (debounce), then we can. 
+Another annoyance is that with this user might think everything is right but when he clicks out then he sees error. This slow feedback might upset the user. To get arount this  so we have to add one more thing called debounce.  When the user stops typing for 3 seconds (debounce), then we can show the error messages.  
  
-Also, Technically keep in mind that.  
+Also, Technically  we have keep in mind that.  
 A form can be invalid and not show errors. For example, the initial start position doesn't have anything filled out. It's not valid, but we don't want to show the mistakes on the default state. Form field validity should be tested on every change and blur.
 
 Premise 2. Make it impossible to get wrong.
