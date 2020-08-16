@@ -1,3 +1,4 @@
+
 # useFormHook
 Best react form library of 2020. V 1.0 
 
@@ -24,26 +25,27 @@ How I believe forms should work as a user experience perspective.
 
 
 # The code is super lightweight. 
- .4kB MINIFIED
-708B MINIFIED + GZIPPED	
+
+- .4kB MINIFIED 
+- 708B MINIFIED + GZIPPED
 
 # The validations are easy just past a regex pattern
-   <input
-         name="email"
-         onBlur={handleInputChange}
-         onChange={handleInputChange}
-         pattern="\S+@\S+\.\S+"
-         value={values.email}
-      />
+<input
+name="email"
+onBlur={handleInputChange}
+onChange={handleInputChange}
+pattern="\S+@\S+\.\S+"
+value={values.email}
+/>
 
 # Can easily  block a user from typing characters regex patterns.
-    <input
-                data-dontallow="[0-9]"
-                name="numbersOnly"
-                onBlur={handleInputChange}
-                onChange={handleInputChange}
-                value={values.numbersOnly}
-            />
+<input
+data-dontallow="[0-9]"
+name="numbersOnly"
+onBlur={handleInputChange}
+onChange={handleInputChange}
+value={values.numbersOnly}
+/>
 
 # Fast devlopment only one line is needed to add form feild validations and prevent regex patterns
 Form Valuations and key prevention is less than one l line per input. 
@@ -53,50 +55,52 @@ https://codesandbox.io/s/laughing-brook-eszw7?file=/src/App.js:647-1123
 
 # Quick guide. 
 
-import useForm from 'react-useformhook-pro';
+	import useForm from 'react-useformhook-pro';
 
 call in component
 
-const { errors,
-	 setErrors,
-	 formSubmit,
-	 handleInputChange,
-	 isFormValid,
-	 isValid,
-	 setFieldValid,
-	 setValues,
-	 values} = useForm()
+	const { errors,
+	setErrors,
+	formSubmit,
+	handleInputChange,
+	isFormValid,
+	isValid,
+	setFieldValid,
+	setValues,
+	values} = useForm()
 
 Optional set intal values and valid states.  
- useForm = (
-	 initialValues = {email:"test@gmail.com", name:"test"},
-	 initialValidty = {email:true,name:false}
+
+	useForm = (
+	initialValues = {email:"test@gmail.com", name:"test"},
+	initialValidty = {email:true,name:false}
 	)
 
 attach the handle handleInputChange  values to your component and regex pattern 
 
-    <input
-         name="email"
-         onChange={handleInputChange}
-         pattern="\S+@\S+\.\S+"
-         value={values.email}
-            />
+	<input
+	name="email"
+	onChange={handleInputChange}
+	pattern="\S+@\S+\.\S+"
+	value={values.email}
+	/>
 
 Display errors.
- <p> {errors.email&& "please enter a valid email" } </p>
+
+	<p> {errors.email&& "please enter a valid email" } </p>
 
 Optional, don't allow specific values with regex patterns. 
 
-    <input
-         name="email"
-         onChange={handleInputChange}
-         pattern="\S+@\S+\.\S+"
-         value={values.email}
- data-dontallow="[0-9]"
-            />
-	    
-	    
+	<input
+	name="email"
+	onChange={handleInputChange}
+	pattern="\S+@\S+\.\S+"
+	value={values.email}
+	data-dontallow="[0-9]"
+	/>
+
+
 Lastly only enable the form  when its valid. 
 
-             <button disabled={!isFormValid}> Submit Form </button>
+	<button disabled={!isFormValid}> Submit Form </button>
 
