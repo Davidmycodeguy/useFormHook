@@ -22,34 +22,34 @@ To accpolish this we take the following steps:
 - 708B MINIFIED + GZIPPED
 
 # The validations are easy just one line a regex pattern (add pattren attribute to input)
-<input
-name="email"
-onBlur={handleInputChange}
-onChange={handleInputChange}
-pattern="\S+@\S+\.\S+"
-value={values.email}
-/>
+	<input
+	name="email"
+	onBlur={handleInputChange}
+	onChange={handleInputChange}
+	pattern="\S+@\S+\.\S+"
+	value={values.email}
+	/>
 
 # Prevent user entering certain  characters with just one line regex pattern. (add allow data-dontallow)
-<input
-data-dontallow="[0-9]"
-name="numbersOnly"
-onBlur={handleInputChange}
-onChange={handleInputChange}
-value={values.numbersOnly}
-/>
+	<input
+	data-dontallow="[0-9]"
+	name="numbersOnly"
+	onBlur={handleInputChange}
+	onChange={handleInputChange}
+	value={values.numbersOnly}
+	/>
 
 # Fast devlopment and easy to read only one line regex patterns where as ussly might take serval hundrand lines. 
 Form Valuations and key prevention is less than one l line per input. 
 
-Code Sandbox 
+# Code Sandbox 
 https://codesandbox.io/s/laughing-brook-eszw7?file=/src/App.js:647-1123
 
 # Quick guide. 
 
 	import useForm from 'react-useformhook-pro';
 
-call in component
+call in hook in the component
 
 	const { errors,
 	setErrors,
@@ -68,7 +68,7 @@ Optional set intal values and valid states.
 	initialValidty = {email:true,name:false}
 	)
 
-attach the handle handleInputChange  values to your component and regex pattern 
+attach the handle handleInputChange,values,name and regex pattern to your componen
 
 	<input
 	name="email"
