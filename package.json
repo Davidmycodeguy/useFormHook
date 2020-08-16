@@ -1,0 +1,34 @@
+{
+  "name": "react-useformhook-pro",
+  "version": "1.0.0",
+  "description": "Best react form library of 2020. V 1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidmycodeguy/useFormHook.git"
+  },
+  "keywords": [
+    "React",
+    "Use",
+    "Form",
+    "Hook",
+    "regex",
+    "validation",
+    "disable",
+    "button",
+    "dont",
+    "allow",
+    "filter",
+    "out",
+    "Debounce"
+  ],
+  "author": "Davidmycodeguy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davidmycodeguy/useFormHook/issues"
+  },
+  "homepage": "https://github.com/Davidmycodeguy/useFormHook#readme"
+}
