@@ -5,7 +5,7 @@
 Best react form library of 2020. V 1.0 
 https://www.youtube.com/watch?v=CcPajbjT6Zw
 
-How I believe forms should work AS A UX perspective.  
+How I believe forms should from  A UX perspective.  
 
 Premise 1. Make the user feel at ease 
 Please Don't Interrupt the user with show error to the user until he completed his entry. It Slows down the user and might make them feel attacked.  
